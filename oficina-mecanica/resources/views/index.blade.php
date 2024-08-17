@@ -3,7 +3,7 @@
 @section('content')
     <h1 class="my-4">Lista de Carros</h1>
     <a href="{{ route('create') }}" class="btn btn-primary mb-3">Adicionar Novo</a>
-    <table class="table">
+    <table class="table" style="text-align:center">
         <thead>
             <tr>
                 <th>Modelo</th>
