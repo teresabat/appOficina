@@ -30,8 +30,15 @@
         </div>
         <div class="form-group">
             <label for="metodo_pagamento">Método de Pagamento</label>
-            <input type="text" name="metodo_pagamento" class="form-control" id="metodo_pagamento" required>
+            <select name="metodo_pagamento" id="metodo_pagamento" class="form-control">
+              <option value="Pix">Pix</option>
+              <option value="Dinheiro">Dinheiro</option>
+              <option value="Débito">Débito</option>
+              <option value="Crédito">Crédito</option>
+            </select>
         </div>
         <button type="submit" class="btn btn-primary">Salvar</button>
+        <a href="{{ route('cars.index') }}" class="btn btn-secondary">Voltar ao Índice</a>
+
     </form>
 @endsection

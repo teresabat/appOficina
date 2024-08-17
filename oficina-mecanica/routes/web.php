@@ -9,7 +9,4 @@ Route::post('/store', [CarController::class, 'store'])->name('store');
 Route::get('/edit/{id}', [CarController::class, 'edit'])->name('edit');
 Route::put('/update/{id}', [CarController::class, 'update'])->name('update');
 Route::delete('/destroy/{id}', [CarController::class, 'destroy'])->name('destroy');
-
-
-
-
+Route::resource('cars', CarController::class);

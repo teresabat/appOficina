@@ -23,7 +23,7 @@
                     <td>{{ $car->marca }}</td>
                     <td>{{ $car->ano }}</td>
                     <td>{{ $car->data_ingresso }}</td>
-                    <td>{{ number_format((float)$car->orcamento, 2, ',', '.') }} R$</td>
+                    <td>{{ Number::currency($car->orcamento, 'BRL') }}</td>
                     <td>{{ $car->nome_mecanico }}</td>
                     <td>{{ $car->metodo_pagamento }}</td>
                     <td>

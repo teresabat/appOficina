@@ -13,14 +13,14 @@ return new class extends Migration
     {
         Schema::create('cars', function (Blueprint $table) {
             $table->id();
-            $table->string('modelo');
-            $table->string('marca');
-            $table->year('ano');
-            $table->date('data_ingresso');
-            $table->decimal('orcamento', 10,2);
-            $table->string('nome_mecanico');
-            $table->string('metodo_pagamento');
-            $table->timestamps();
+        $table->string('modelo');
+        $table->string('marca');
+        $table->year('ano');
+        $table->date('data_ingresso');
+        $table->decimal('orcamento', 10, 2);
+        $table->string('nome_mecanico');
+        $table->string('metodo_pagamento');
+        $table->timestamps();
         });
     }
 
